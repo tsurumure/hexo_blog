@@ -39,6 +39,10 @@
         {{- next_inject('sidebar') }}
       </div>
 
+      <div class="tagclouds">
+      {{ tagcloud({min_font: theme.tagcloud.min, max_font: theme.tagcloud.max, amount: theme.tagcloud.amount, color: true, start_color: theme.tagcloud.start, end_color: theme.tagcloud.end}) }}
+      </div>
+
       {%- if theme.back2top.enable and theme.back2top.sidebar %}
         <div class="back-to-top motion-element">
           <i class="fa fa-arrow-up"></i>
