@@ -41,6 +41,7 @@
       </div>
     {%- endif %}
 
+    <!--
     {%- if site.tags.length > 0 %}
       {%- set tagsPageQuery = site.pages.find({type: 'tags'}, {lean: true}) %}
       {%- set hasTagsPage = tagsPageQuery.length > 0 %}
@@ -57,6 +58,8 @@
         {%- if hasTagsPage %}</a>{%- endif %}
       </div>
     {%- endif %}
+    -->
+
   </nav>
 </div>
 {%- endif %}

@@ -13,6 +13,7 @@
   transition-property: bottom;
   z-index: $zindex-3;
   the-transition();
+  border-radius: 4px;
 
   if (hexo-config('back2top.scrollpercent')) {
     width: initial;
@@ -24,9 +25,9 @@
     }
   }
 
-  &:hover {
-    color: $sidebar-highlight;
-  }
+  // &:hover {
+  //   color: $sidebar-highlight;
+  // }
 
   &.back-to-top-on {
     bottom: $b2t-position-bottom-on;

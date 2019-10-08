@@ -37,6 +37,7 @@
         {{ partial('_partials/sidebar/site-overview.swig', {}, {cache: theme.cache.enable}) }}
 
         {{- next_inject('sidebar') }}
+
       </div>
 
       {%- if theme.back2top.enable and theme.back2top.sidebar %}
@@ -47,6 +48,14 @@
       {%- endif %}
 
     </div>
+
+    <div class="sidebar-list-categories">
+      {{ list_categories() }}
+    </div>
+
   </aside>
+
+
+
   <div id="sidebar-dimmer"></div>
 {% endmacro %}

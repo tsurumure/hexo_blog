@@ -84,3 +84,10 @@ deploy:
   repository: git@github.com:tsurumure/tsurumure.github.io.git
   branch: master
 
+sitemap:
+  path: sitemap.xml
+  template: ./sitemap_template.xml
+  rel: false
+
+# baidusitemap:
+#   path: sitemap.xml

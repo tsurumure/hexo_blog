@@ -109,7 +109,7 @@ if (hexo-config('sidebar.position') == 'right') {
   .back-to-top {
     left: auto;
     right: $b2t-position-right;
-    background: #eee;
+    background: $b2t-bg-color; // #eee;
     +tablet-mobile() {
       right: $b2t-position-right-mobile;
     }
@@ -123,4 +123,18 @@ if (hexo-config('sidebar.position') == 'right') {
     padding-right: 0;
     width: auto;
   }
+}
+
+.comments {
+  & > .vwrap .markdown, & > .info { display: none; }
+  &.v .vlist .vcard {
+    .vhead .vnick { color: #6f78ed; }
+    .vh .vmeta .vat {
+      color: #aaa;
+      &:hover {
+        color: #444;
+      }
+    }
+  }
+
 }
